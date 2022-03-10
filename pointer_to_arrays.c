@@ -18,10 +18,10 @@ int main(){
   arr++;
   
   arr = myArr;
-  printf("%d %d\n", (*arr)[0] , (*arr)[1]));
-  printf("%d %d\n", *(*arr + 0), *(*arr+1));
-  printf("%d %d\n", *(*(arr+1) + 0)), *(*(arr+1) + 1);
-  printf("%d %d\n", *(*(arr+2) + 0)), *(*(arr+2) + 1);
+  printf("%d %d\n", (*arr)[0] , (*arr)[1]));                //Exp: 0 3
+  printf("%d %d\n", *(*arr + 0), *(*arr+1));                //Exp: 0 1
+  printf("%d %d\n", *(*(arr+1) + 0)), *(*(arr+1) + 1);      //Exp: 1 4
+  printf("%d %d\n", *(*(arr+2) + 0)), *(*(arr+2) + 1);      //Exp: 2 5
   
   return 0;
 }
