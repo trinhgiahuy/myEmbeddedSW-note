@@ -9,7 +9,7 @@ int myArray[3][4] = {
 int main(){
   printf("%p %p %p\n", myArr, myArr+1, myArr+2);
   
-  int (*arr)[4] = myArray;
+  int (*arr)[4] = myArray;        //Array of 4 pointers (4*4 or 4*8 bytes dpend on 32/64 bits platform)
   printf("%p\n", arr);
   arr++;
   printf("%p\n", arr);
